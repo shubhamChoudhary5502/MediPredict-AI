@@ -18,63 +18,11 @@ An AI-powered disease prediction and prescription system with voice-enabled inpu
 ## 🏗️ System Design
 
 MediPredict-AI is a modular, voice-enabled disease prediction system integrating NLP, ML, and prescription generation via Flask REST API.
+![WhatsApp Image 2025-07-29 at 20 46 26_b0407192](https://github.com/user-attachments/assets/c0d70938-8e0c-4f32-bda5-195da5f3a38d)
 
 ### 🔄 Architecture Overview
 
-+--------------------------+
-| End User (Patient) |
-| [Voice / Text Input] |
-+-----------+--------------+
-|
-v
-+--------------------------+
-| React Frontend (Planned)|
-| - Symptom form (UI) |
-| - Voice-to-text interface|
-| - Display predictions |
-| - Download prescriptions |
-+-----------+--------------+
-|
-v
-+----------------------------+
-| Flask REST API Backend |
-| |
-| /predict -> Predict disease |
-| /voice-input -> Convert voice to text |
-| /prescription -> Generate prescription |
-+-----------+------------------------------+
-|
-v
-+----------------------------+
-| Core Logic Modules |
-| |
-| 1. Voice Assistant Module |
-| - SpeechRecognition |
-| - gTTS (Text-to-Speech) |
-| - Langdetect |
-| |
-| 2. Disease Prediction ML |
-| - Preprocessing (One-hot)|
-| - Scikit-learn Model |
-| - Multi-class Classifier|
-| |
-| 3. Prescription Generator |
-| - Template engine (Jinja)|
-| - PDF/Text output |
-+-----------+----------------+
-|
-v
-+-----------------------------+
-| Storage and Dataset Layer |
-| |
-| - Final_Augmented_dataset...|
-| - Generated PDF records |
-| - (Optional) MongoDB/JSON |
-+-----------------------------+
-
-yaml
-Copy
-Edit
+![WhatsApp Image 2025-07-29 at 20 46 26_d1b778a2](https://github.com/user-attachments/assets/80b2bcd7-1656-4c54-b03d-ed5de351b302)
 
 ---
 
